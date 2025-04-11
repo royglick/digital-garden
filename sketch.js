@@ -222,7 +222,8 @@ function draw() {
     // Draw pinch indicator if pinching
     if (handAttractors.isPinching) {
       drawPinchIndicator(handAttractors.pinchPosition);
-      atmosphere.addLocalEffect(hands[0].index_finger_tip.x, hands[0].index_finger_tip.y, 'dust', Math.floor(moveDistance / 10));
+      atmosphere.addLocalEffect(handAttractors.pinchPosition.x, handAttractors.pinchPosition.y, 'dust');
+      console.log("Pinch detected at: ", handAttractors.pinchPosition);
     }
     
     // Display debug info if enabled
