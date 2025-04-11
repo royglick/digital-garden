@@ -15,7 +15,7 @@ class Atmosphere {
       
       // Dust particle properties
       this.dustParticles = [];
-      this.maxDustParticles = 100;
+      this.maxDustParticles = 500;
       this.dustColors = [
         [255, 255, 255, 40], // White
         [220, 220, 255, 30], // Light blue
