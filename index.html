@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Digital Garden</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+    
+    canvas {
+      display: block;
+    }
+    
+    .instructions {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 6px;
+      pointer-events: none;
+      z-index: 10;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 400px;
+    }
+    
+    .controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+      text-align: right;
+    }
+    
+    .title {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 20px;
+      font-weight: bold;
+      pointer-events: none;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <!-- P5.js and libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <!-- Replace toxiclibsjs with Matter.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+  
+  <!-- Application scripts -->
+  <script src="lsystem.js"></script>
+  <script src="physics.js"></script>
+  <script src="plant.js"></script>
+  <script src="garden.js"></script>
+  <script src="handGestures.js"></script>
+  <script src="sketch.js"></script>
+  <script src="handAttractors.js"></script>
+  <script src="atmosphere.js"></script>
+  
+  <!-- Instructions overlay -->
+  <!-- <div class="instructions">
+    <h3>Interactive Digital Garden</h3>
+    <p>Use your hand to interact with the plants. Touch the bottom of the screen with your index finger to grow a new plant.</p>
+    <p><strong>Controls:</strong></p>
+    <ul>
+      <li>D: Toggle debug view</li>
+      <li>C: Clear all plants</li>
+      <li>R: Create random plants</li>
+      <li>H: Toggle hand physics</li>
+    </ul>
+  </div> -->
+</body>
+</html>
