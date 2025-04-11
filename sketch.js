@@ -35,7 +35,7 @@ let windEffect = {
   force: 0,
   targetForce: 0,
   changeRate: 0.93,
-  maxForce: 0.00025
+  maxForce: 0.0009
 };
 
 function updateWindEffect() {
